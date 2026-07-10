@@ -56,7 +56,7 @@ export default function Hero() {
               alt="Naadan dog guest at We Care Pets"
               width={1000}
               height={820}
-              className="hero-image-zoom h-full w-full object-cover"
+              className="hero-image-zoom h-full w-full object-cover object-[50%_25%] sm:object-center"
             />
           </div>
         </div>

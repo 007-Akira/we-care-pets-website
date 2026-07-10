@@ -7,7 +7,7 @@
     "postbuild": "opennextjs-cloudflare build --skipNextBuild",
     "build:next": "next build",
     "build:cloudflare": "opennextjs-cloudflare build",
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "start": "next start",
     "lint": "eslint",
     "preview": "npm run build:cloudflare && opennextjs-cloudflare preview",

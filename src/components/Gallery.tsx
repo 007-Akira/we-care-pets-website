@@ -33,6 +33,7 @@ export default function Gallery() {
               <div
                 key={`gallery-page-${pageIndex}`}
                 className="gallery-carousel-page"
+                data-item-count={page.length}
                 aria-hidden={pageIndex >= galleryPages.length}
               >
                 {page.map((item, itemIndex) => (

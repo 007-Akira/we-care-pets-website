@@ -313,6 +313,12 @@ section {
     flex-basis: min(100vw - 2.5rem, 72rem);
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+
+  .gallery-carousel-page[data-item-count="2"] {
+    align-self: center;
+    flex-basis: calc(min(100vw - 2.5rem, 72rem) * 2 / 3);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .trust-marquee {

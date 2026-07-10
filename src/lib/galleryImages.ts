@@ -6,10 +6,13 @@ export type GalleryImage = {
 };
 
 const galleryPublicPath = "/images/we-care-pets/gallery";
+// Change this value whenever existing gallery files are replaced in place so
+// Next.js and the production CDN request a fresh optimized image.
+const galleryVersion = "2026-07-10-4";
 
 export function getGalleryImages(): GalleryImage[] {
   return galleryFiles.map((filename) => ({
-    src: `${galleryPublicPath}/${filename}`,
+    src: `${galleryPublicPath}/${filename}?v=${galleryVersion}`,
     alt: `We Care Pets boarding gallery photo ${formatPhotoLabel(filename)}`,
   }));
 }

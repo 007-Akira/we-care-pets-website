@@ -42,8 +42,8 @@ export default function Hero() {
         >
           <div className="hero-image-card hero-image-card-front hero-organic-shadow absolute right-[-8%] top-0 h-[70%] w-[70%] overflow-hidden rounded-[2rem]">
             <Image
-              src="/images/we-care-pets/labrador-personal-care.jpg"
-              alt="Outdoor boarding facility at We Care Pets"
+              src="/images/we-care-pets/gallery-06.webp?v=2026-07-10"
+              alt="Dog guest at We Care Pets"
               width={1100}
               height={900}
               priority
@@ -52,8 +52,8 @@ export default function Hero() {
           </div>
           <div className="hero-image-card hero-image-card-back hero-organic-shadow absolute bottom-[-8%] left-[-8%] h-[70%] w-[70%] overflow-hidden rounded-[2rem] border-4 border-[#FFF8EF]/80">
             <Image
-              src="/images/we-care-pets/gallery-06.webp"
-              alt="Labrador receiving personal care at We Care Pets"
+              src="/images/we-care-pets/naadan_patti.webp?v=2026-07-10-2"
+              alt="Naadan dog guest at We Care Pets"
               width={1000}
               height={820}
               className="hero-image-zoom h-full w-full object-cover"

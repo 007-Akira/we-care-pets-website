@@ -16,6 +16,14 @@ const nextConfig: NextConfig = {
         pathname: "/images/we-care-pets/about-page.webp",
         search: "?v=2026-07-10-2",
       },
+      {
+        pathname: "/images/we-care-pets/gallery-06.webp",
+        search: "?v=2026-07-10",
+      },
+      {
+        pathname: "/images/we-care-pets/naadan_patti.webp",
+        search: "?v=2026-07-10-2",
+      },
     ],
   },
 };

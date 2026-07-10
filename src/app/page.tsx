@@ -7,7 +7,6 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
 import Navbar from "@/components/Navbar";
 import Reviews from "@/components/Reviews";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -23,7 +22,6 @@ export default function Home() {
         <TrustStrip />
         <About />
         <Facilities />
-        <HowItWorks />
         <BookingSection />
         <Reviews />
         <Gallery />

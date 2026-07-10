@@ -12,7 +12,7 @@ export default function About() {
           data-reveal
         >
           <Image
-            src="/images/we-care-pets/labrador-personal-care.webp"
+            src="/images/we-care-pets/about-page.webp?v=2026-07-10-2"
             alt="Labrador receiving personal care from We Care Pets"
             width={1000}
             height={900}

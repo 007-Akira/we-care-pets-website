@@ -41,17 +41,17 @@ export const facilities = [
   {
     title: "Restful Boarding Suites",
     text: "Premium indoor cage facilities give dogs and puppies a secure, clean, and restful place to settle during short-term and long-term stays.",
-    image: "/images/we-care-pets/golden-retriever-indoor-kennel.webp",
+    image: "/images/we-care-pets/facilities1.webp",
   },
   {
     title: "Secure Play Yard",
     text: "Outdoor cage facilities and open-air care spaces support fresh air, movement, and supervised engagement throughout the stay.",
-    image: "/images/we-care-pets/indoor.jpeg",
+    image: "/images/we-care-pets/facilities2.webp",
   },
   {
     title: "Calm Care Corners",
     text: "Personalized affection, steady routines, and attentive handling help puppies, seniors, and first-time boarders feel safe.",
-    image: "/images/we-care-pets/outdoor.jpeg",
+    image: "/images/we-care-pets/facilities3.webp",
   },
 ];
 
@@ -64,21 +64,6 @@ export const careFeatures = [
   "Puppy care",
   "Personalized affection",
   "Open 24 hours",
-];
-
-export const steps = [
-  {
-    title: "Send basic details",
-    text: "Add your name, phone, dog details, stay dates, care notes, and a short message.",
-  },
-  {
-    title: "Open WhatsApp",
-    text: "The form creates a simple structured message for We Care Pets.",
-  },
-  {
-    title: "Confirm and drop off",
-    text: "Availability, pricing, and booking confirmation happen directly with the business.",
-  },
 ];
 
 export const reviews = businessConfig.reviewSnippets;

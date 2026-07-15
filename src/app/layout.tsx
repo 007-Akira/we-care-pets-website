@@ -57,8 +57,14 @@ export default function RootLayout({
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": `${siteUrl}/#localbusiness`,
     name: businessConfig.businessName,
     description: businessConfig.description,
+    url: siteUrl,
+    logo: `${siteUrl}/icon.png`,
+    image: `${siteUrl}/images/we-care-pets/heropage1.webp`,
+    email: businessConfig.email,
+    foundingDate: String(businessConfig.establishedYear),
     address: {
       "@type": "PostalAddress",
       streetAddress,
@@ -68,10 +74,41 @@ export default function RootLayout({
       addressCountry: businessConfig.address.country,
     },
     openingHours: "Mo-Su 00:00-23:59",
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
+      opens: "00:00",
+      closes: "23:59",
+    },
     areaServed: `${businessConfig.address.locality}, ${businessConfig.address.region}`,
-    url: siteUrl,
-    email: businessConfig.email,
+    hasMap: businessConfig.googleMapsUrl,
     telephone: businessConfig.phoneNumbers.map((number) => `+91${number}`),
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: `+91${businessConfig.phoneNumbers[0]}`,
+        contactType: "customer service",
+        areaServed: "IN",
+        availableLanguage: ["English", "Malayalam"],
+      },
+      {
+        "@type": "ContactPoint",
+        email: businessConfig.email,
+        contactType: "customer service",
+      },
+    ],
+    sameAs: [
+      businessConfig.instagramUrl,
+      businessConfig.googleBusinessProfileUrl,
+    ],
     makesOffer: businessConfig.services.map((service) => ({
       "@type": "Offer",
       itemOffered: {

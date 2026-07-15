@@ -23,6 +23,8 @@ export const businessConfig = {
   websiteUrl: "",
   googleMapsUrl: "https://maps.app.goo.gl/sJcuAPyHqPJ3786f8",
   googleBusinessProfileUrl: "https://maps.app.goo.gl/sJcuAPyHqPJ3786f8",
+  instagramHandle: "@we_care_pet_boarding_2021",
+  instagramUrl: "https://www.instagram.com/we_care_pet_boarding_2021/",
   services: [
     "Dog Boarding",
     "Dog Day Care",

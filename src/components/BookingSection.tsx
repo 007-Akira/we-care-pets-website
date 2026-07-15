@@ -23,7 +23,7 @@ export default function BookingSection() {
   return (
     <section
       id="booking"
-      className="paw-pattern relative overflow-hidden bg-white px-4 py-14 md:px-5 md:py-24"
+      className="paw-pattern relative overflow-hidden bg-[#F8EFE3] px-4 py-14 md:px-5 md:py-24"
     >
       <div className="pointer-events-none absolute -left-16 top-16 h-48 w-48 rounded-full bg-[#D9903D]/10 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-20 h-56 w-56 rounded-full bg-[#6B8F71]/12 blur-3xl" />

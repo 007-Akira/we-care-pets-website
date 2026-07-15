@@ -4,7 +4,7 @@ import Image from "next/image";
 import SmoothAnchor from "./SmoothAnchor";
 import SectionHeading from "./SectionHeading";
 
-type ContactIconName = "phone" | "whatsapp" | "email" | "clock";
+type ContactIconName = "phone" | "whatsapp" | "email" | "instagram" | "clock";
 
 const mapSearchQuery = [
   businessConfig.businessName,
@@ -42,6 +42,12 @@ export default function Contact() {
       value: business.email || "Coming soon",
       icon: "email" as const,
       href: business.email ? `mailto:${business.email}` : undefined,
+    },
+    {
+      label: "Instagram",
+      value: businessConfig.instagramHandle,
+      icon: "instagram" as const,
+      href: businessConfig.instagramUrl,
     },
     {
       label: "Hours",
@@ -172,6 +178,8 @@ function ContactCard({
     return (
       <a
         href={href}
+        target={href.startsWith("http") ? "_blank" : undefined}
+        rel={href.startsWith("http") ? "noreferrer" : undefined}
         className="block rounded-2xl border border-[#E8DCCB] bg-white p-4 transition hover:-translate-y-0.5 hover:border-[#CDE0D2] hover:shadow-[0_14px_28px_rgba(31,61,54,0.08)]"
       >
         {content}
@@ -228,6 +236,22 @@ function ContactIcon({ icon }: { icon: ContactIconName }) {
         >
           <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" />
           <path d="m22 7-10 6L2 7" />
+        </svg>
+      ) : null}
+      {icon === "instagram" ? (
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          className={iconClassName}
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+        >
+          <rect x="3" y="3" width="18" height="18" rx="5" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="17.5" cy="6.5" r="0.75" fill="currentColor" stroke="none" />
         </svg>
       ) : null}
       {icon === "clock" ? (

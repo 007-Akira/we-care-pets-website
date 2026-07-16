@@ -107,7 +107,7 @@ export default function Footer() {
                   href={developer.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/72 transition hover:text-white"
+                  className="text-white/72 transition hover:text-white text-sm"
                 >
                   {developer.name}
                 </a>

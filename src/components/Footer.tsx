@@ -10,6 +10,11 @@ const policyLinks = [
   { href: "/cancellation-policy", label: "Cancellation" },
 ];
 
+const developers = [
+  { name: "Adithya Kiran", href: "https://www.linkedin.com/in/adithya-kiran-08291827b/" },
+  { name: "Godly K Mathews", href: "https://godly.is-a.dev/" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-[#1F3D36] px-4 py-6 text-white sm:px-5 md:py-8">
@@ -91,8 +96,24 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-white/12 pt-4 pr-20 text-xs font-bold text-white/54 sm:flex-row sm:items-center sm:justify-between sm:pr-0">
-          <p>(c) 2026 We Care Pets. All rights reserved.</p>
+        <div className="flex flex-col gap-3 border-t border-white/12 pt-4 pr-20 text-xs font-bold text-white/54 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between sm:pr-0">
+          <p>© 2026 We Care Pets. All rights reserved.</p>
+          <p>
+            Developed by{" "}
+            {developers.map((developer, index) => (
+              <span key={developer.href}>
+                {index > 0 && " & "}
+                <a
+                  href={developer.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/72 transition hover:text-white"
+                >
+                  {developer.name}
+                </a>
+              </span>
+            ))}
+          </p>
           <nav className="flex flex-wrap gap-x-4 gap-y-2">
             {policyLinks.map((item) => (
               <SmoothAnchor
